@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import Table from '@/components/Table'
 
 function MailIcon(props) {
   return (
@@ -50,7 +51,7 @@ function Newsletter() {
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         />
-        <Button type="submit" className="ml-4 flex-none">
+        <Button type="submit" href="" className="ml-4 flex-none">
           Submit
         </Button>
       </div>
@@ -83,6 +84,9 @@ export default function Home() {
             list beforehand, and safe yourself the hassle.
           </p>
         </div>
+      </Container>
+      <Container className="mt-10">
+        <Table></Table>
       </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto">
